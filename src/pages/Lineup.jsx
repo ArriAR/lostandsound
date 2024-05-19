@@ -17,6 +17,7 @@ import Xime from '../assets/artist_assets/artist_xime.png';
 import party from '../assets/artist_assets/bisschen_party.jpg';
 
 const LineupPage = ({ contentRef }) => {
+  gsap.registerPlugin(TextPlugin);
   const fadeRef = useRef(null);
   const captionRef = useRef(null);
   const sortiment = [
@@ -80,6 +81,7 @@ const LineupPage = ({ contentRef }) => {
                     ></div>
                   </div>
                 </div>
+
                 {/* LGnius */}
                 <div>
                   <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)', transform: 'none' }}>
