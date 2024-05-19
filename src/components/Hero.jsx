@@ -13,7 +13,7 @@ const MenuItem = ({ text, href, to, onClick = "_self" }) => {
         target="_blank" // Ensure the link opens in a new tab
         rel="noopener noreferrer" // Security feature for external links
         className="opacity-90 pointer-events-auto flex h-full flex-1 items-center justify-center rounded-lg md:rounded-3xl md:py-edge md:hover:translate-y-6 hover:scale-90 ease-in-out duration-300 hover:bg-gray-900"
-        style={{ background: 'rgb(106, 0, 128)', color: 'rgb(255, 255, 255)' }}
+        style={{ background: 'rgb(71, 49, 112)', color: 'rgb(255, 255, 255)' }}
       >
         <span className="hero-text select-none text-[1rem] font-bold leading-[1em] md:translate-y-[-0.05em] md:text-[2.5rem] lg:text-[3rem] lg:leading-[1em] xl:text-[3.5rem] xl:leading-[1em] 2xl:text-[4.0rem] 2xl:leading-[1em]">
           {text}
@@ -99,7 +99,7 @@ const Hero = ({scrollToContent}) => {
                handleClick('/lostandsound/location')} />
                <MenuItem text="Lineup" to="/lostandsound/lineup" onClick={() =>
                handleClick('/lostandsound/lineup')}/>
-               <MenuItem text="Workshops" to="/lostandsound/programm" onClick={() =>
+               <MenuItem text="Programm" to="/lostandsound/programm" onClick={() =>
                handleClick('/lostandsound/lineup')}/>
             </div>
       </nav>

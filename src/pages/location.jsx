@@ -48,9 +48,7 @@ const LocationPage = ({ contentRef }) => {
                             style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                             />
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                        
                     </main>
                   </div>
                 </div>  
@@ -123,9 +121,7 @@ const LocationPage = ({ contentRef }) => {
                             style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                             />
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                        
                     </main>
                   </div>
                 </div>  
@@ -174,9 +170,7 @@ const LocationPage = ({ contentRef }) => {
                             style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                             />
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div>
+                        
                     </main>
                   </div>
                 </div>       
@@ -207,9 +201,7 @@ const LocationPage = ({ contentRef }) => {
                               style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                               />
                           </div>
-                          <div className="text-detail !font-normal">
-                              <TicketButton />
-                          </div>
+                          
                       </main>
                   </div>
                </div>

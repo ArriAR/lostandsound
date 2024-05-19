@@ -14,16 +14,6 @@
       transform: rotate(360deg);
     }
   }
-
-@media (hover: hover) and (min-width: 768px) {
-  .hover-scale {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1); /* Standardzustand */
-  }
-  .hover-scale:hover {
-    transform: scale(1.05);
-  }
-}
  
 html, body {
   overflow-x: hidden;

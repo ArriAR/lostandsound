@@ -16,6 +16,7 @@ import Spielkamerad from '../assets/artist_assets/artist_spielkamerad.png';
 import Xime from '../assets/artist_assets/artist_xime.png';
 import party from '../assets/artist_assets/bisschen_party.jpg';
 
+
 const LineupPage = ({ contentRef }) => {
   gsap.registerPlugin(TextPlugin);
   const fadeRef = useRef(null);
@@ -109,7 +110,47 @@ const LineupPage = ({ contentRef }) => {
                             />
                         </div>
                         <div className="text-detail !font-normal">
-                            <TicketButton />
+
+                          {/* Mediaplayer */}
+
+                          <div>
+                            <iframe 
+                              title="SoundCloud Player" 
+                              style={{ width: '100%', height: '166px', border: 'none' }} 
+                              scrolling="no" 
+                              allow="autoplay" 
+                              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1712962857&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <div 
+                              style={{ 
+                                fontSize: '10px', 
+                                color: '#cccccc', 
+                                lineBreak: 'anywhere', 
+                                wordBreak: 'normal', 
+                                overflow: 'hidden', 
+                                whiteSpace: 'nowrap', 
+                                textOverflow: 'ellipsis', 
+                                fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                fontWeight: '100'
+                              }}>
+                              <a 
+                                href="https://soundcloud.com/lgnius" 
+                                title="LGnius" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                LGnius
+                              </a> · 
+                              <a 
+                                href="https://soundcloud.com/lgnius/groove-around-find-out" 
+                                title="groove around & find out" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                groove around & find out
+                              </a>
+                            </div>
+                          </div>
                         </div> 
                     </main>
                   </div>
@@ -171,7 +212,45 @@ const LineupPage = ({ contentRef }) => {
                               />
                           </div>
                           <div className="text-detail !font-normal">
-                              <TicketButton />
+                              {/* Mediaplayer */}
+                            <div>
+                              <iframe 
+                                title="SoundCloud Player" 
+                                style={{ width: '100%', height: '166px', border: 'none' }} 
+                                scrolling="no" 
+                                allow="autoplay" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1448651407&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                              </iframe>
+                              <div 
+                                style={{ 
+                                  fontSize: '10px', 
+                                  color: '#cccccc', 
+                                  lineBreak: 'anywhere', 
+                                  wordBreak: 'normal', 
+                                  overflow: 'hidden', 
+                                  whiteSpace: 'nowrap', 
+                                  textOverflow: 'ellipsis', 
+                                  fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                  fontWeight: '100'
+                                }}>
+                                <a 
+                                  href="https://soundcloud.com/absteige" 
+                                  title="Absteige" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  Absteige
+                                </a> · 
+                                <a 
+                                  href="https://soundcloud.com/absteige/tanz-mit-mir" 
+                                  title="Tanz Mit Mir" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  Tanz Mit Mir
+                                </a>
+                              </div>
+                            </div>
                           </div>
                       </main>
                   </div>
@@ -209,7 +288,87 @@ const LineupPage = ({ contentRef }) => {
                               />
                           </div>
                           <div className="text-detail !font-normal">
-                              <TicketButton />
+
+                            {/* Mediaplayer MRTI */}
+
+                            <div>
+                              <iframe 
+                                title="SoundCloud Player for MRTI @ Sisyphos Wintergarten" 
+                                style={{ width: '100%', height: '166px', border: 'none' }} 
+                                scrolling="no" 
+                                allow="autoplay" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1820994543&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                              </iframe>
+                              <div 
+                                style={{ 
+                                  fontSize: '10px', 
+                                  color: '#cccccc', 
+                                  lineBreak: 'anywhere', 
+                                  wordBreak: 'normal', 
+                                  overflow: 'hidden', 
+                                  whiteSpace: 'nowrap', 
+                                  textOverflow: 'ellipsis', 
+                                  fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                  fontWeight: '100'
+                                }}>
+                                <a 
+                                  href="https://soundcloud.com/mrtiparti" 
+                                  title="MRTI" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  MRTI
+                                </a> · 
+                                <a 
+                                  href="https://soundcloud.com/mrtiparti/mrti-sisyphos-wintergarten-090524" 
+                                  title="MRTI @ Sisyphos Wintergarten | 09/05/24 🦆" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  MRTI @ Sisyphos Wintergarten | 09/05/24 🦆
+                                </a>
+                              </div>
+                            </div>
+
+                            {/* Mediaplayer DJ Rakete */}
+                            <div>
+                              <iframe 
+                                title="SoundCloud Player for DJ Rakete" 
+                                style={{ width: '100%', height: '166px', border: 'none' }} 
+                                scrolling="no" 
+                                allow="autoplay" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1579162503&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                              </iframe>
+                              <div 
+                                style={{ 
+                                  fontSize: '10px', 
+                                  color: '#cccccc', 
+                                  lineBreak: 'anywhere', 
+                                  wordBreak: 'normal', 
+                                  overflow: 'hidden', 
+                                  whiteSpace: 'nowrap', 
+                                  textOverflow: 'ellipsis', 
+                                  fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                  fontWeight: '100'
+                                }}>
+                                <a 
+                                  href="https://soundcloud.com/dj_rakete" 
+                                  title="dj rakete" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  dj rakete
+                                </a> · 
+                                <a 
+                                  href="https://soundcloud.com/dj_rakete/mrti-b2b-dj-rakete-traumtanzer-festival-2023" 
+                                  title="MRTI b2b DJ RAKETE - Uferlos Stage | Traumtänzer Festival 2023" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                  MRTI b2b DJ RAKETE - Uferlos Stage | Traumtänzer Festival 2023
+                                </a>
+                              </div>
+                            </div>
                           </div>
                       </main>
                   </div>
@@ -243,7 +402,46 @@ const LineupPage = ({ contentRef }) => {
                             />
                         </div>
                         <div className="text-detail !font-normal">
-                            <TicketButton />
+                            {/* Mediaplayer */}
+
+                          <div>
+                            <iframe 
+                              title="SoundCloud Player for XIME - Daydream Delusion" 
+                              style={{ width: '100%', height: '166px', border: 'none' }} 
+                              scrolling="no" 
+                              allow="autoplay" 
+                              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1761469518&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <div 
+                              style={{ 
+                                fontSize: '10px', 
+                                color: '#cccccc', 
+                                lineBreak: 'anywhere', 
+                                wordBreak: 'normal', 
+                                overflow: 'hidden', 
+                                whiteSpace: 'nowrap', 
+                                textOverflow: 'ellipsis', 
+                                fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                fontWeight: '100'
+                              }}>
+                              <a 
+                                href="https://soundcloud.com/xime0" 
+                                title="XIME" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                XIME
+                              </a> · 
+                              <a 
+                                href="https://soundcloud.com/xime0/daydream-delusion" 
+                                title="Daydream Delusion" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                Daydream Delusion
+                              </a>
+                            </div>
+                          </div>
                         </div>
                     </main>
                   </div>
@@ -283,7 +481,9 @@ const LineupPage = ({ contentRef }) => {
                             />
                         </div>
                         <div className="text-detail !font-normal">
-                            <TicketButton />
+                          <a href="https://www.instagram.com/thekendallwax" target="_blank" rel="noopener noreferrer" className="bg-purple-300 rounded-lg p-2 font-bold hover:bg-purple-200 hover:cursor-pointer">
+                            Instagram
+                          </a> 
                         </div>
                     </main>
                   </div>
@@ -327,8 +527,89 @@ const LineupPage = ({ contentRef }) => {
                             />
                         </div>
                         <div className="text-detail !font-normal">
-                            <TicketButton />
+
+                          {/* Mediaplayer Maxi */}
+                          <div>
+                            <iframe 
+                              title="SoundCloud Player for Tb303 - Überlagerfeld" 
+                              style={{ width: '100%', height: '166px', border: 'none' }} 
+                              scrolling="no" 
+                              allow="autoplay" 
+                              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1671302781&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <div 
+                              style={{ 
+                                fontSize: '10px', 
+                                color: '#cccccc', 
+                                lineBreak: 'anywhere', 
+                                wordBreak: 'normal', 
+                                overflow: 'hidden', 
+                                whiteSpace: 'nowrap', 
+                                textOverflow: 'ellipsis', 
+                                fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                fontWeight: '100'
+                              }}>
+                              <a 
+                                href="https://soundcloud.com/user-297058737" 
+                                title="Tb303" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                Tb303
+                              </a> · 
+                              <a 
+                                href="https://soundcloud.com/user-297058737/rec-2023-11-21" 
+                                title="Überlagerfeld" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                Überlagerfeld
+                              </a>
+                            </div>
+                          </div>
+
+                          {/* Mediaplayer Andrew */}
+
+                          <div>
+                            <iframe 
+                              title="SoundCloud Player for Kizu - I dreamed about you" 
+                              style={{ width: '100%', height: '166px', border: 'none' }} 
+                              scrolling="no" 
+                              allow="autoplay" 
+                              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1679686248&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <div 
+                              style={{ 
+                                fontSize: '10px', 
+                                color: '#cccccc', 
+                                lineBreak: 'anywhere', 
+                                wordBreak: 'normal', 
+                                overflow: 'hidden', 
+                                whiteSpace: 'nowrap', 
+                                textOverflow: 'ellipsis', 
+                                fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                fontWeight: '100'
+                              }}>
+                              <a 
+                                href="https://soundcloud.com/kizuloge" 
+                                title="Kizu" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                Kizu
+                              </a> · 
+                              <a 
+                                href="https://soundcloud.com/kizuloge/i-dreamed-about-you" 
+                                title="I dreamed about you" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                I dreamed about you
+                              </a>
+                            </div>
+                          </div>
                         </div>
+
                     </main>
                   </div>
                 </div>
@@ -361,8 +642,70 @@ const LineupPage = ({ contentRef }) => {
                             />
                         </div>
                         <div className="text-detail !font-normal">
-                            <TicketButton />
+
+                          {/* Mediaplayer */}
+                          <div>
+                            <iframe 
+                              title="SoundCloud Player for ѕριєℓкαмєяα∂ at 𝔏𝔦𝔡𝔬𝔩𝔦𝔫𝔬" 
+                              style={{ width: '100%', height: '166px', border: 'none' }} 
+                              scrolling="no" 
+                              allow="autoplay" 
+                              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1259889535&color=%23473170&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <div 
+                              style={{ 
+                                fontSize: '10px', 
+                                color: '#cccccc', 
+                                lineBreak: 'anywhere', 
+                                wordBreak: 'normal', 
+                                overflow: 'hidden', 
+                                whiteSpace: 'nowrap', 
+                                textOverflow: 'ellipsis', 
+                                fontFamily: 'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif', 
+                                fontWeight: '100'
+                              }}>
+                              <a 
+                                href="https://soundcloud.com/spielkameradhalbtrocken" 
+                                title="ѕριєℓкαмєяα∂" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                ѕριєℓкαмєяα∂
+                              </a> · 
+                              <a 
+                                href="https://soundcloud.com/spielkameradhalbtrocken/lidolino" 
+                                title="𝟚𝟘𝟚𝟚/𝟘𝟜/𝟚𝟡 @ 𝔏𝔦𝔡𝔬𝔩𝔦𝔫𝔬" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ color: '#cccccc', textDecoration: 'none' }}>
+                                𝟚𝟘𝟚𝟚/𝟘𝟜/𝟚𝟡 @ 𝔏𝔦𝔡𝔬𝔩𝔦𝔫𝔬
+                              </a>
+                            </div>
+                          </div>
                         </div>
+                    </main>
+                  </div>
+                </div>
+                
+                {/* Instagram */}
+              <div>
+                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)', transform: 'none' }}>
+                    <header className="text-detail flex justify-between">
+                        <div>More to be announced soon!</div>
+                        <div></div>
+                    </header>
+                    <main className="space-y-3 lg:space-y-4">
+                        <div className="space-y-[1em]">
+                            <p className="text-default">
+                              Die neusten Künstler:Innen Announcements findest du auf unserem Instagram!<br /><br />
+                            </p>
+                        </div>
+                        <div className="text-detail !font-normal">
+                          <a href="https://www.instagram.com/lostandsound.festival" target="_blank" rel="noopener noreferrer" className="bg-purple-300 rounded-lg p-2 font-bold hover:bg-purple-200 hover:cursor-pointer">
+                            Instagram
+                          </a> 
+                        </div>
+                        
                     </main>
                   </div>
                 </div>

@@ -35,9 +35,7 @@ const InfoPage = ({ contentRef }) => {
                               Alles was du wissen musst!
                             </p>
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                        
                     </main>
                   </div>
                 </div>  
@@ -100,9 +98,7 @@ const InfoPage = ({ contentRef }) => {
                               style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                               />
                           </div>
-                          <div className="text-detail !font-normal">
-                              <TicketButton />
-                          </div>
+                          
                       </main>
                   </div>
               </div>
@@ -151,9 +147,7 @@ const InfoPage = ({ contentRef }) => {
                             style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
                             />
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div>
+                        
                     </main>
                   </div>
                 </div>       
@@ -172,9 +166,7 @@ const InfoPage = ({ contentRef }) => {
                             Es wird mehrere Trinkwasser & Abwaschstationen auf dem Gelände geben. Dort könnt ihr euer mitgebrachtes Geschirr, Besteck und Becher waschen.<br /><br />
                             </p>
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                        
                     </main>
                   </div>
                 </div> 
@@ -195,9 +187,7 @@ const InfoPage = ({ contentRef }) => {
                                 Back to the basics - ab in den See. Auffrischen könnt ihr euch auch beim Baden in den sieben Seen in Brodowin.<br /><br />
                             </p>
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                        
                     </main>
                   </div>
                 </div>   
@@ -216,9 +206,7 @@ const InfoPage = ({ contentRef }) => {
                             Brandenburgisches Land zieht nicht nur BerlinerInnen, sondern auch Scharen an wilden Mückenschwärmen an. Denkt an Mückenspray, feste Schuhe und warme Pullis für abends. Im Falle von Regen: Gummistiefel! Wir sind Mitten auf dem Land<br /><br />
                             </p>
                         </div>
-                        <div className="text-detail !font-normal">
-                            <TicketButton />
-                        </div> 
+                       
                     </main>
                   </div>
                 </div>
