@@ -15,9 +15,10 @@ import MrtiRakete from '../assets/artist_assets/artist_mrti_rakete.png';
 import Spielkamerad from '../assets/artist_assets/artist_spielkamerad.png';
 import Xime from '../assets/artist_assets/artist_xime.png';
 import party from '../assets/artist_assets/bisschen_party.jpg';
+import Vaennen from '../assets/artist_assets/artist_vaennen.png';
 
 
-const LineupPage = ({ contentRef }) => {
+const LineupPage = ({}) => {
   gsap.registerPlugin(TextPlugin);
   const fadeRef = useRef(null);
   const captionRef = useRef(null);
@@ -31,6 +32,14 @@ const LineupPage = ({ contentRef }) => {
     { text: "MRTI & DJ Rakete" },
     { text: "Lost & Sound 2024" },
   ];
+
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   useEffect(() => {
 
@@ -79,6 +88,7 @@ const LineupPage = ({ contentRef }) => {
                     <div
                       className="js-text text-6xl p-4 text-yellow-300 font-bold min-h-24"
                       ref={captionRef}
+                      style = {{color: 'rgb(246, 95, 2)'}}
                     ></div>
                   </div>
                 </div>
@@ -682,6 +692,44 @@ const LineupPage = ({ contentRef }) => {
                               </a>
                             </div>
                           </div>
+                        </div>
+                    </main>
+                  </div>
+                </div>
+
+                {/* Vaennen */}
+              <div>
+                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)', transform: 'none' }}>
+                    <header className="text-detail flex justify-between">
+                        <div>💜Vännen🐐</div>
+                        <div></div>
+                    </header>
+                    <main className="space-y-3 lg:space-y-4">
+                        <div className="space-y-[1em]">
+                            <p className="text-default">
+                            vännen is your dear friend where you just know they'd somehow survive an alien invasion. their sets speak the martian language of fast-paced scanditek influenced by trance, psy and whatever lurks in the darkness of the woods, infecting dancefloors with a transcendental force that leaves you with the strange feeling that something is just a little bit off...<br /><br /> 
+                            they have been sticking around Kiel's techno scene for as long as they can remember (just a few centuries) and just recently co-founded the DJ collective fae tribe. The goal being: the psitekification of a nation, eternal love and returning back home to outerspace. Enter the Strudel.<br /><br />
+                            </p>
+                        </div>
+                        <div className="relative overflow-hidden rounded-lg">
+                            <img
+                            src={Vaennen}
+                            alt=""
+                            loading="lazy"
+                            width="1920"
+                            height="1920"
+                            decoding="async"
+                            data-nimg="1"
+                            className="block w-full transition duration-300 object-contain"
+                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
+                            />
+                        </div>
+                        <div className="text-detail !font-normal">
+
+                          <a href="https://soundcloud.com/computrrhrz" target="_blank" rel="noopener noreferrer" className="bg-purple-300 rounded-lg p-2 font-bold hover:bg-purple-200 hover:cursor-pointer">
+                            Soundcloud
+                          </a> 
+                          
                         </div>
                     </main>
                   </div>

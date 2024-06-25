@@ -99,8 +99,8 @@ const Hero = ({scrollToContent}) => {
                handleClick('/lostandsound/location')} />
                <MenuItem text="Lineup" to="/lostandsound/lineup" onClick={() =>
                handleClick('/lostandsound/lineup')}/>
-               <MenuItem text="Programm" to="/lostandsound/programm" onClick={() =>
-               handleClick('/lostandsound/lineup')}/>
+               <MenuItem text="Infos" to="/lostandsound/wichtige_infos" onClick={() =>
+               handleClick('/lostandsound/wichtige_infos')}/>
             </div>
       </nav>
    </header>

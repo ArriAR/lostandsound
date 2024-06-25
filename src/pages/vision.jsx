@@ -10,7 +10,15 @@ import Recap from "../assets/recap.png";
 import Teamfoto from '../assets/teamfoto.png';
 
 
-const VisionPage = ({contentRef}) => {
+const VisionPage = ({}) => {
+
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   return (
     <>

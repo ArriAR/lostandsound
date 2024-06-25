@@ -16,7 +16,7 @@ import Info from '../assets/ticket_assets/stages_info.png';
 import stage_eintag from '../assets/ticket_assets/stage_eintag.png';
 import stage_dorf from '../assets/ticket_assets/stage_dorf.png';
 
-const TicketsPage = ({ contentRef }) => {
+const TicketsPage = ({}) => {
   gsap.registerPlugin(TextPlugin);
   const fadeRef = useRef(null);
   const captionRef = useRef(null);
@@ -30,6 +30,13 @@ const TicketsPage = ({ contentRef }) => {
     { text: "MRTI & DJ Rakete" },
     { text: "Lost & Sound 2024" },
   ];
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   useEffect(() => {
 
@@ -81,6 +88,7 @@ const TicketsPage = ({ contentRef }) => {
                     <div
                       className="js-text text-6xl p-4 text-yellow-300 font-bold min-h-24"
                       ref={captionRef}
+                      style = {{color: 'rgb(246, 95, 2)'}}
                     ></div>
                   </div>
                 </div>

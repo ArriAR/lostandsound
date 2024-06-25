@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/logoandsound.svg'
 import TicketButton from '../components/TicketButton';
 
-const MerchPage = ({contentRef}) => {
+const MerchPage = ({}) => {
   gsap.registerPlugin(TextPlugin);
 
   const fadeRef = useRef(null);
@@ -24,6 +24,14 @@ const MerchPage = ({contentRef}) => {
     { text: "MRTI & DJ Rakete" },
     { text: "Lost & Sound 2024" },
   ];
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+  
   useEffect(() => {
 
       const fade = fadeRef.current;
@@ -71,6 +79,7 @@ const MerchPage = ({contentRef}) => {
                   <div
                     className="js-text text-6xl p-4 text-yellow-300 font-bold min-h-24"
                     ref={captionRef}
+                    style = {{color: 'rgb(246, 95, 2)'}}
                   ></div>
                 </div>
               </div>

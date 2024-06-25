@@ -12,7 +12,16 @@ import TasseZeltet from '../assets/location_assets/zeltplatz_mit_tasse.jpg';
 import Natur from '../assets/location_assets/natur_chillen.jpeg';
 import TreckerShuttle from '../assets/location_assets/trecker_shuttle.jpeg';
 
-const LocationPage = ({ contentRef }) => {
+const LocationPage = ({}) => {
+
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <>
       <div className="relative">
@@ -25,14 +34,14 @@ const LocationPage = ({ contentRef }) => {
                 {/* Introduction */}
                 <div>
                   <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)', transform: 'none' }}>
-                    <header className="text-detail flex justify-between">
+                    <header className="text-detail flex flex-col justify-between" style = {{fontSize: '2rem'}}>
                         <div>Location & Anreise</div>
                         <div>30.08. - 01.09.2024</div>
                     </header>
                     <main className="space-y-3 lg:space-y-4">
                         <div className="space-y-[1em]">
                             <p className="text-default">
-                              Deine Reise in den kollektiven, familiären Raum, frei von Konventionen.
+                            
                             </p>
                         </div>
                         <div className="relative overflow-hidden rounded-lg">

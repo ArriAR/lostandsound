@@ -12,7 +12,16 @@ import Fruehstueck from '../assets/info_page/fruehstueck_leute.jpeg';
 import Natur from '../assets/location_assets/natur_chillen.jpeg';
 import Bar from '../assets/info_page/bar_frtasse.png';
 
-const InfoPage = ({ contentRef }) => {
+const InfoPage = ({}) => {
+  
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <>
       <div className="relative">

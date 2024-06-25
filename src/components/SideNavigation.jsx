@@ -30,10 +30,12 @@ const SideNavigation = () => {
         */}
         <Link to="/lostandsound/tickets" className="bg-gray-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Ticket Infos</Link>
         <Link to="/lostandsound/wichtige_infos" className="bg-gray-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Wichtige Infos</Link>
-        <Link to="/lostandsound/merch" className="bg-red-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Merch</Link>
+        <Link to="/lostandsound/merch" className="bg-gray-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Merch</Link>
+        {/*
         <Link to="/lostandsound/bilder" className="bg-red-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Bilder</Link>
         <Link to="/lostandsound/programm" className="bg-red-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">Programm</Link>
         <Link to="/lostandsound/ls23" className="bg-red-200 p-2 mr-2 mb-2 lg:rounded-xl rounded-lg hover:bg-gray-300">L&S 23</Link>
+        */}
       </div>
     </div>
   )

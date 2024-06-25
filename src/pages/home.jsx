@@ -13,11 +13,12 @@ import LineUpCover from '../assets/artist_assets/lineup_cover.png';
 import ProgrammCover from '../assets/programm_workshops/programmcover.png';
 import Teamfoto from '../assets/teamfoto.png';
 import RecapCover from '../assets/recap_page/recapCover.png';
-import LaS from '../assets/lost-and-sound.png';
+import LaS from '../assets/info_page/info_pic.jpeg';
 import GreatImage from '../assets/GreatImage.png';
 import HeaderLaS from '../assets/header_LaS.png';
 import FooterLaS from '../assets/footer_LaS.png';
 import Stages from '../assets/ticket_assets/stages.png';
+import Card from '../components/main_card';
 
 const HomePage = ({ contentRef }) => {
   gsap.registerPlugin(TextPlugin);
@@ -27,7 +28,7 @@ const HomePage = ({ contentRef }) => {
   const sortiment = [
     { text: "LGnius" },
     { text: "Xime" },
-    { text: "Absteige" },
+    { text: "Absteige" }, 
     { text: "Spielkamerad" },
     { text: "Kendall Wax" },
     { text: "Maxi & Andrew" },
@@ -89,87 +90,44 @@ const HomePage = ({ contentRef }) => {
                 </div>
                 
                 {/* Vision */}
+                
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-white" style={{ background: 'rgb(71, 49, 112)'}}>
-                    <header className="text-detail !text-white flex justify-between">
-                        <div>Vision</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default !text-white">
-                                Alles rund um unsere Vision und wie alles begann...
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={Teamfoto}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="text-detail !font-normal !text-white">
-                                <Link to="/lostandsound/vision" className="bg-gray-400 rounded-lg p-2 font-bold hover:bg-gray-300 hover:cursor-pointer">
-                                Zeig mir mehr!</Link> 
-                            </div> 
-                        </div> 
-                    </main>
-                  </div>
-                </div> 
+                  <Card
+                    color="rgb(71, 49, 112)"
+                    image={Teamfoto}
+                    headerText="Vision"
+                    bodyText="Alles rund um unsere Vision und wie alles begann..."
+                    text_color="rgb(255, 255, 255)"
+                    link="/lostandsound/vision"
+                    button_text="Zeig mir mehr!"
+                  />
+                </div>
 
                 {/* Artist Magic */}
 
                 <div className="flex items-center justify-center w-full h-40 bg-black">
                   <div className="section" ref={fadeRef}>
                     <div
-                      className="js-text text-6xl p-4 text-yellow-300 font-bold min-h-24"
+                      className="js-text text-6xl p-4 font-bold min-h-24"
+                      style = {{color: 'rgb(246, 95, 2)'}}
                       ref={captionRef}
                     ></div>
                   </div>
                 </div>
 
                 {/* Lineup */}
+
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)'}}>
-                    <header className="text-detail flex justify-between">
-                        <div>Lineup</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default">
-                                Hier lernst du all unsere Acts für dieses Jahr kennen.
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={LineUpCover}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-start">
-                                <Link to="/lostandsound/lineup" className="bg-gray-300 rounded-lg p-2 font-bold hover:bg-gray-400 hover:cursor-pointer">
-                                Artists</Link> 
-                            </div>
-                        </div> 
-                    </main>
-                  </div>
-                </div> 
+                  <Card
+                    color="rgb(234, 234, 234)"
+                    image={LineUpCover}
+                    headerText="Lineup"
+                    bodyText="Hier lernst du all unsere Acts für dieses Jahr kennen."
+                    text_color="rgb(0, 0, 0)"
+                    link="/lostandsound/lineup"
+                    button_text="Artists"
+                  />
+                </div>
 
                 {/* Drehscheibe */}
                 
@@ -210,34 +168,16 @@ const HomePage = ({ contentRef }) => {
                 </div>
 
                 {/* Tickets */}
+
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(234, 234, 234)'}}>
-                    <header className="text-detail flex justify-between">
-                        <div>Ticket Infos</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={Stages}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-start">
-                                <Link to="/lostandsound/tickets" className="bg-gray-300 rounded-lg p-2 font-bold hover:bg-gray-400 hover:cursor-pointer">
-                                Ticket Infos</Link> 
-                            </div>
-                        </div> 
-                    </main>
-                  </div>
+                  <Card
+                    color="rgb(234, 234, 234)"
+                    image={Stages}
+                    headerText="Ticket Infos"
+                    text_color="rgb(0, 0, 0)"
+                    link="/lostandsound/tickets"
+                    button_text="Ticket Infos"
+                  />
                 </div>
 
 
@@ -248,79 +188,32 @@ const HomePage = ({ contentRef }) => {
               <div className="space-y-4">
 
                 {/* Workshops / Programm */}
+
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black text-black" style={{ background: 'rgb(234, 234, 234)'}}>
-                    <header className="text-detail flex justify-between">
-                        <div>Programm</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default">
-                                Yoga, Graffiti, ein Tattoo oder Paneldiskussion? Schau dir hier unser Programm an.
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={ProgrammCover}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-end">
-                                <Link to="/lostandsound/wichtige_infos" className="bg-gray-300 rounded-lg p-2 font-bold hover:bg-gray-400 hover:cursor-pointer">
-                                    Programm
-                                </Link> 
-                            </div>
-                        </div> 
-                    </main>
-                  </div>
-                </div>
+                  <Card
+                    color="rgb(234, 234, 234)"
+                    image={ProgrammCover}
+                    headerText="Programm"
+                    bodyText="Yoga, Graffiti, ein Tattoo oder Paneldiskussion? Schau dir hier unser Programm an."
+                    text_color="rgb(0, 0, 0)"
+                    link="/lostandsound/programm"
+                    button_text="Programm"
+                  />
+                </div> 
 
                 {/* Wichtige Infos */}
+
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(246, 95, 2)'}}>
-                    <header className="text-detail !text-white flex justify-between">
-                        <div>Wichtige Infos</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default !text-white">
-                                Alles was du wissen musst
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            opacity="20"
-                            src={LaS}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-start">
-                                <Link to="/lostandsound/wichtige_infos" className="bg-gray-400 rounded-lg p-2 font-bold text-white hover:bg-gray-300 hover:cursor-pointer">
-                                Wichtige Infos
-                                </Link> 
-                            </div>
-                        </div> 
-                    </main>
-                  </div>
-                </div> 
+                  <Card
+                    color="rgb(246, 95, 2)"
+                    image={LaS}
+                    headerText="Wichtige Infos"
+                    bodyText="Alles was du wissen musst"
+                    text_color="rgb(255, 255, 255)"
+                    link="/lostandsound/wichtige_infos"
+                    button_text="Wichtige Infos"
+                  />
+                </div>
 
                 {/* Bild */}
 
@@ -335,76 +228,29 @@ const HomePage = ({ contentRef }) => {
                 {/* Location */}
 
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(71, 49, 112)'}}>
-                    <header className="text-detail !text-white flex justify-between">
-                        <div>Location</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default !text-white">
-                                Deine Reise in den kollektiven, familiären Raum, frei von Konventionen.
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={LocaCover}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-start">
-                                <Link to="/lostandsound/location" className="bg-gray-400 text-white rounded-lg p-2 font-bold hover:bg-gray-300 hover:cursor-pointer">
-                                Location & Anreise</Link> 
-                            </div> 
-                        </div> 
-                    </main>
-                  </div>
+                  <Card
+                    color="rgb(71, 49, 112)"
+                    image={LocaCover}
+                    headerText="Location"
+                    text_color="rgb(255, 255, 255)"
+                    link="/lostandsound/location"
+                    button_text="Location & Anreise"
+                  />
                 </div>
 
                 {/* Recap 2023 */}
 
                 <div>
-                  <div className="space-y-3 p-3 lg:space-y-4 lg:p-4 text-black" style={{ background: 'rgb(246, 95, 2)'}}>
-                    <header className="text-detail !text-white flex justify-between">
-                        <div>Recap 2023</div>
-                        <div></div>
-                    </header>
-                    <main className="space-y-3 lg:space-y-4">
-                        <div className="space-y-[1em]">
-                            <p className="text-default !text-white">
-                                Hier findest du unseren Aftermovie und viele Bilder von Lost and Sound 2023
-                            </p>
-                        </div>
-                        <div className="relative overflow-hidden rounded-lg">
-                            <img
-                            src={RecapCover}
-                            alt=""
-                            loading="lazy"
-                            width="1920"
-                            height="1920"
-                            decoding="async"
-                            data-nimg="1"
-                            className="block w-full transition duration-300 object-contain"
-                            style={{ color: 'transparent', maxWidth: '100%', userSelect: 'none' }}
-                            />
-                        </div>
-                        <div className="text-detail !font-normal">
-                            <div className="flex justify-start">
-                                <Link to="/lostandsound/bilder" className="bg-gray-400 rounded-lg p-2 text-white font-bold hover:bg-gray-300 hover:cursor-pointer">
-                                Galerie</Link> 
-                            </div>
-                        </div> 
-                    </main>
-                  </div>
-                </div>   
+                  <Card
+                    color="rgb(246, 95, 2)"
+                    image={RecapCover}
+                    headerText="Recap 2023"
+                    bodyText="Hier findest du unseren Aftermovie und viele Bilder von Lost and Sound 2023"
+                    text_color="rgb(255, 255, 255)"
+                    link="/lostandsound/bilder"
+                    button_text="Galerie"
+                  />
+                </div>
 
 
                 {/* Additional Containers as needed */}
